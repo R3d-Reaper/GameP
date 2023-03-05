@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register an account</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="./resources/style.css" type="text/css" rel="stylesheet">
+        <script src="./resources/script.js"></script>
+    </head>
+    <!---------Header---------->
+    <header>
+        <h1 class="logo"><a href="./home.html" class="home-link">Game<span class="p-logo">P</a></span></h1>
+    </header>
+    <body>
+        <div class="registration-container">
+            <fieldset class="registration-block">
+                <legend class="registration-logo"><h1 class="logo">Game<span class="p-logo">P</span></h1></legend>
+                <form name="registration-form" action="" method="post" autocomplete="on">
+                    <br>
+                    <div class="registration-input">
+                        <div class="registration-input-cell fn">
+                            <!---------First Name---------->
+                            <h2 class="registration-label">First Name</h2>
+                            <br>
+                            <input type="text" id="fname" name="firstname" class="fn" required/>
+                        </div>
+                        <div class="registration-input-cell ln">
+                            <!---------Last Name---------->
+                            <h2 class="registration-label">Last Name</h2>
+                            <br>
+                            <input type="text" id="lname" name="lastname" class="ln" required />
+                        </div>
+                        <div class="registration-input-cell age">
+                            <!---------Age---------->
+                            <h2 class="registration-label">Age</h2>
+                            <br>
+                            <input type="number" id="age" name="age" min="0" 
+                            onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" 
+                            class="age" required />
+                        </div>
+                    </div>
+                    <br>
+                    <!---------Gender---------->
+                    <h2 class="registration-label">Gender</h2>
+                    <br>
+                    <input type="radio" id="male" name="gender" class="choices" value="Male"/>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" class="choices" value="Female"/>
+                    <label for="female">Female</label>
+                    <input type="radio" id="RNS" name="gender" class="choices" value="RNS" checked />
+                    <label for="rns">Rather not say</label>  
+                    <br>
+                    <br>
+                    <!---------Birthdate---------->
+                    <h2 class="registration-label">Birthdate</h2>
+                    <input type="date" id="birthdate" name="birthdate" required />
+                    <br>
+                    <br>
+                    <!---------Avatar---------->
+                    <h2 class="registration-label">Avatar (Optional)</h2>
+                    <input type="file" name="Avatar" accept="image/x-png,image/gif,image/jpeg" />
+                    <br>
+                    <br>
+                    <!----------Username---------->
+                    <h2 class="registration-label">Username</h2>
+                    <input type="text" id="username" name="username" required />
+                    <br>
+                    <br>
+                    <!----------Email---------->
+                    <h2 class="registration-label">E-mail</h2>
+                    <input type="email" id="email" name="email" required />
+                    <br>
+                    <br>
+                    <!----------Mobile No.---------->
+                    <h2 class="registration-label">Mobile No.</h2>
+                    <input type="tel" id="monile-no." name="mobile-no." required />
+                    <br>
+                    <br>
+                    <!----------Password---------->
+                    <h2 class="registration-label">Password</h2>
+                    <input type="password" id="password" name="password" required />
+                    <br>
+                    <br>
+                    <!----------Confirm Password---------->
+                    <h2 class="registration-label">Confirm Password</h2>
+                    <input type="password" id="confirm-password" name="confirm-password" required />
+                    <br>
+                    <br>
+                    <input type="submit" value="Register" class="registration-button" onclick="checkFields(event)" required/>
+                </form>
+                <br>
+                <a href="./login.html" class="registration-to-login">Already have an account?</a>
+            </fieldset>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login to GameP</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="./resources/style.css" type="text/css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <!---------Header---------->
+    <header>
+        <h1 class="logo"><a href="./home.html" class="home-link">Game<span class="p-logo">P</a></span></h1>
+    </header>
+    <body>
+        <div class="login-container">
+            <fieldset class="login-block">
+                <legend class="login-logo"><h1 class="logo">Game<span class="p-logo">P</span></h1></legend>
+                <form name="login-form" action="" method="post" autocomplete="on">
+                    <br>
+                    <div id="invalid-error"></div>
+                    <br>
+                    <h2 class="login-label">Username/Email:</h2>
+                    <input class="login-input" id="login-ue" type="text email" name="username/email" placeholder="&#xf007;" required />
+                    <br>
+                    <br>
+                    <h2 class="login-label">Password:</h2>
+                    <input class="login-input" id ="login-password" type="password" name="password" placeholder="&#xf023;" required/>
+                    <br>
+                    <br>
+                    <input id="login-submit" type="submit" value="Login" class="login-button" onclick="prevent(event)" required/>
+                </form>
+                <br>
+                <a href="./registration.html" class="login-to-registration">Don't have an account?</a>
+            </fieldset>
+        </div>
+    </body>
+</html>

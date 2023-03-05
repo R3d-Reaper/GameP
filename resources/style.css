@@ -1,0 +1,500 @@
+/* For All */
+header {
+    background-color: #EB0120;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #EB0120;
+    height: 100px;
+    margin: auto 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.copyright {
+    margin-right: auto;
+    margin-left: 35px;
+    font-size: 25px;
+}
+
+.about {
+    margin-right: 35px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.about:hover {
+    text-decoration: underline;
+}
+
+.about:active {
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 50px;
+    width: auto;
+    font-family: 'Press Start 2P', cursive;
+    border: 3px black solid;
+    border-radius: 20px;
+    padding: 5px 7.5px;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #17EBE7;
+}
+
+.p-logo {
+    color: #EBE817;
+}
+
+
+/********** For Home **********/
+
+.links {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(0, 221, 255);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.links:hover {
+    color: yellow;
+}
+
+.links:active {
+    color: rgb(31, 246, 31);
+    margin-top: 5px;
+}
+
+/*.link:visited {
+    text-decoration: none;
+    text-decoration-color: none;
+}*/
+
+body {
+    background-image: url('https://img.freepik.com/free-vector/blurred-background-design_1107-224.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1700px 1700px;
+}
+
+.hero {
+    display: flex;
+    background-color: white;
+    margin-top: 100px;
+    justify-content: center;
+    width: 35%;
+    margin-left: 50%;
+    border-radius: 5px;
+    flex-direction: column;
+    box-shadow: 5px 10px 18px 10px;
+}
+
+.hero .logo-hero {
+    color: #17EBE7;
+    padding: 5px 7.5px;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px black solid;
+    border-radius: 20px;
+    background-color: #EB0120;
+}
+
+.hero .hero-header {
+    text-align: center;
+    margin: 15px 0;
+    font-family: Roboto;
+}
+
+.hero .hero-info {
+    text-align: center;
+    font-family: Roboto;
+}
+
+.game-hero {
+    color: #17EBE7;
+    font-weight: bold;
+}
+
+.p-hero {
+    color: #EBE817;
+    font-weight: bold;
+}
+
+.chase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ghost {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.pacman {
+    margin-top: 15px;
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+}
+
+/********** For Login **********/
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-block {
+    width: 15%;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px 5px;
+}
+
+.login-block form{
+    padding: 0 50px;
+    display: block;
+}
+
+.login-logo {
+    text-align:center;
+    color: #17EBE7;
+}
+
+.login-logo .logo {
+    background-color: #EB0120;
+    margin: 0;
+}
+
+input[type="password"]::placeholder {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700; width: 100%;
+  }
+
+  input[type="text email"]::placeholder {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700; width: 100%;
+  }
+
+.login-button {
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+.login-button:hover {
+    background-color: rgb(186, 4, 4);
+}
+
+.login-button:active {
+    background-color: rgb(255, 0, 0);
+}
+
+.login-to-registration {
+    color: rgb(114, 114, 114);
+    text-decoration: none;
+}
+
+.login-label {
+    font-weight: bold;
+    font-family: Helvetica;
+    margin: 0;
+    font-size: 16px;
+}
+
+.login-to-registration:hover {
+    text-decoration: underline;
+}
+/********** For Registration **********/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+}
+
+.registration-block {
+    width: 25%;
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px 5px;
+}
+
+.registration-block form input {
+    width: 100%;
+}
+
+.registration-block form input.fn, 
+.registration-block form input.ln {
+    width: 85%;
+}
+
+.registration-block form input.age {
+    width: 70%;
+}
+
+
+.registration-block form{
+    padding: 0 50px;
+    display: block;
+}
+
+input#male.choices,
+input#female.choices,
+input#RNS.choices {
+    width: 10px;
+}
+
+.registration-logo {
+    text-align:center;
+    color: #17EBE7;
+}
+
+.registration-logo .logo {
+    background-color: #EB0120;
+    margin: 0;
+}
+
+.registration-button {
+    width: 50%;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+.registration-button:hover {
+    background-color: rgb(186, 4, 4);
+}
+
+.registration-button:active {
+    background-color: rgb(255, 0, 0);
+}
+
+.registration-to-registration {
+    color: rgb(114, 114, 114);
+    text-decoration: none;
+}
+
+.registration-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    display: inline;
+    font-family: Helvetica;
+}
+
+.gender {
+    width: 10%;
+}
+
+.registration-input {
+    display: table;
+    
+}
+
+.registration-input-cell.fn,
+.registration-input-cell.ln {
+    display: table-cell;
+}
+
+.registration-input-cell.age {
+    display: table-cell;
+    text-align: center;
+    width: 35.5px;
+}
+
+.registration-details {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.registration-to-login {
+    color: rgb(114, 114, 114);
+    text-decoration: none;
+}
+
+.registration-to-login:hover {
+    text-decoration: underline;
+}
+/********** For Main **********/
+.leaderboards {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: yellow;
+    margin-top: 50px;
+  }
+  
+  td, th {
+    border: 4px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+
+  td.user-leaderboard {
+    font-weight:bold;
+  }
+
+  td.score-leaderboard {
+    font-family: Roboto;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ff0000;
+    color: white;
+  }
+
+  .leaderboard-th {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #00ffff, #00fff2, #ff00ae, #0004ff, #ff0800, #f9a825, #ff5722);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  }
+
+  .hidden-name {
+    color: rgb(17, 0, 255);
+    font-weight: bold;
+  }
+
+  .notice {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    width: 35%;
+    border-radius: 5px;
+    flex-direction: column;
+    box-shadow: 5px 10px 18px 10px;
+    margin-top: 50px;
+}
+
+.notice .logo-notice {
+    color: #17EBE7;
+    padding: 5px 7.5px;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px black solid;
+    border-radius: 20px;
+    background-color: #EB0120;
+}
+
+.notice .notice-header {
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, red, #26c6da, red, #eeff41, #f9a825, #ff5722);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent
+}
+
+.notice .notice-info {
+    text-align: center;
+    font-family: Roboto;
+}
+
+.game-notice {
+    color: #17EBE7;
+    font-weight: bold;
+}
+
+.p-notice {
+    color: #EBE817;
+    font-weight: bold;
+}
+
+.threat-t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px dashed black;
+    border-bottom: 3px dashed black;
+    margin: 10px 0;
+}
+
+.hacker img{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+/********** For About **********/
+
+.about-background {
+    margin-top: 20px;
+    background: black;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.about-gamep {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+
+.gamep-about {
+    font-family: Roboto;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.logo-about {
+    margin-left: 5px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.gamep-about-info {
+    font-size: 25px;
+    font-family: Roboto;
+    text-align: center;
+    margin: 10px 15px;
+}
+
+.developer-about {
+    font-family: Roboto;
+    text-align: center;
+}
+
+.developer-about-info {
+    font-size: 25px;
+    font-family: Roboto;
+    text-align: center;
+    margin: 10px 15px;
+}
