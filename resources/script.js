@@ -41,15 +41,18 @@ function invalidClick(event) {
 }
 */
 
-/*
+
 function prevent(event) {
     let loginUser = document.getElementById("login-ue").value;
+    let loginPass = document.getElementById("login-password").value;
 
-    if(loginUser == "" ) {
-        alert('asdfdfsa');
+    if(loginUser == "" || loginUser != "" || loginPass == "" || loginPass != "") {
+        event.preventDefault();
+        let errorMsg = "Invalid login credentials";
+        document.getElementById("invalid-error").innerHTML = "";
+        document.getElementById("invalid-error").innerHTML += errorMsg;
     }
 }
-*/
 
 
 //Registration
